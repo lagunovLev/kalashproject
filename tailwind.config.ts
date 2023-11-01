@@ -8,10 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      padding: {
+        'pl-35': '35%',
+        'pl-60': '60%',
+        'pl-50': '50%',
+        'pl-40': '40%',
+        'pl-70': '70%',
+        'pl-25': '25%',
+        'pl-10': '10%',
+      },
+      margin:{
+'ml-40':'35%'
+      },
+      borderColor:{
+        'cool':'  bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'
       },
       fontFamily : {
         sans: ['var(--font-raleway)'],
