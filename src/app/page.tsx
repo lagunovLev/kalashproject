@@ -56,7 +56,8 @@ height={40}
 </header>
 <section className=' w-3/4'>
 <motion.div
-    className=" w-1/3 h-auto  rounded-lg  ml- mt-20 bg-gradient-to-r from-cyan-500 to-white ml-ml-70  items-center border-r-4 border-blue-900 absolute z-50"
+    className="w-1/3 inset-x-2/3 h-auto  rounded-lg  bg-blue-400 mt-20 ml-ml-70  items-center  absolute z-40"
+    inherit={false}
     initial={{ scale: 0 }}
     animate={animate===true ?{  scale: 1 } : ''}
     transition={{
@@ -65,7 +66,9 @@ height={40}
       damping: 20
     }}
   >
-    <Menu/>
+    <div className="z-50 bg-yellow-400">
+      <Menu/>
+    </div>
   </motion.div>
   <Carousels loop>
               {/* use object-cover + fill since we don't know the height and width of the parent */}
